@@ -1,0 +1,1091 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>그룹홈맵 · 전국 아동공동생활가정 현황</title>
+<meta name="description" content="보건복지부 2025 아동복지시설 현황Ⅱ 기준 전국 520개 아동공동생활가정(그룹홈)의 지역별 현황, 설치연도, 정원·현원, 빈자리를 지도와 목록으로 살펴봅니다.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="그룹홈맵 · 전국 아동공동생활가정 현황">
+<meta property="og:description" content="2024.12.31 기준 전국 그룹홈 520개 시설 현황 지도">
+<meta property="og:site_name" content="한국아동청소년그룹홈협의회 그룹홈맵">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --bg:#FAF8F4; --ink:#23262B; --sub:#6C7178; --faint:#9AA0A6;
+  --green:#5E9E6E; --green-d:#3F7A51; --green-l:#E7F1E9;
+  --coral:#E0728C; --coral-d:#C24E6C; --coral-l:#FBEAEF;
+  --line:#EBE7E0; --card:#FFFFFF; --ink-soft:#3A3E44;
+  --blue:#6E93C9; --shadow:0 14px 36px rgba(46,41,33,.12);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Pretendard","Apple SD Gothic Neo",system-ui,sans-serif;
+  line-height:1.55;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+button,input,select{font:inherit;}
+button{border:0;background:none;color:inherit;}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+.top{
+  position:sticky;top:0;z-index:50;background:rgba(250,248,244,.86);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;}
+.mark{display:flex;align-items:baseline;gap:9px;}
+.mark .name{font-size:19px;font-weight:800;letter-spacing:-.2px;}
+.mark .name b{color:var(--green-d);}
+.mark .sub{font-size:11px;color:var(--faint);font-weight:500;}
+.nav{display:flex;gap:22px;font-size:13px;font-weight:600;color:var(--sub);}
+.nav a{text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;}
+.nav a:hover{color:var(--ink);border-color:var(--green);}
+.hero{padding:74px 0 48px;}
+.eyebrow{
+  display:inline-block;font-size:12px;font-weight:700;color:var(--green-d);
+  letter-spacing:.4px;background:var(--green-l);padding:5px 11px;border-radius:20px;margin-bottom:22px;
+}
+.hero h1{
+  font-size:46px;line-height:1.18;font-weight:800;letter-spacing:0;margin:0 0 18px;
+  max-width:19ch;
+}
+.hero h1 .g{color:var(--green-d);}
+.hero h1 .c{color:var(--coral-d);}
+.hero p.lead{font-size:16.5px;color:var(--ink-soft);max-width:56ch;margin:0 0 40px;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin:-18px 0 36px;}
+.hero-btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 15px;border-radius:20px;
+  text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink-soft);font-size:13px;font-weight:800;
+}
+.hero-btn.primary{background:var(--green-d);border-color:var(--green-d);color:#fff;box-shadow:0 8px 18px rgba(63,122,81,.18);}
+.hero-btn:hover{border-color:var(--green);color:var(--green-d);}
+.hero-btn.primary:hover{color:#fff;background:#356A46;}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.kpi{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 18px;
+  position:relative;overflow:hidden;min-height:116px;
+}
+.kpi .num{font-size:34px;font-weight:800;letter-spacing:0;line-height:1;font-variant-numeric:tabular-nums;}
+.kpi .lab{font-size:12.5px;color:var(--sub);margin-top:9px;font-weight:600;}
+.kpi .hint{font-size:11px;color:var(--faint);margin-top:3px;}
+.kpi.k1 .num{color:var(--ink);}
+.kpi.k2 .num{color:var(--green-d);}
+.kpi.k3 .num{color:var(--ink);}
+.kpi.k4 .num{color:var(--coral-d);}
+.kpi::after{content:"";position:absolute;left:0;top:0;width:4px;height:100%;}
+.kpi.k1::after{background:var(--ink);opacity:.15;}
+.kpi.k2::after{background:var(--green);}
+.kpi.k3::after{background:var(--sub);opacity:.3;}
+.kpi.k4::after{background:var(--coral);}
+.section{padding:56px 0;border-top:1px solid var(--line);}
+.sec-head{margin-bottom:28px;}
+.sec-head .kick{font-size:12px;font-weight:700;color:var(--coral-d);letter-spacing:.4px;text-transform:uppercase;}
+.sec-head h2{font-size:27px;font-weight:800;letter-spacing:0;margin:7px 0 8px;}
+.sec-head p{font-size:14.5px;color:var(--sub);max-width:64ch;margin:0;}
+.timeline-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 26px 18px;}
+.tl-svg{width:100%;height:260px;display:block;}
+.tl-eras{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px;}
+.tl-era{padding:14px 14px;border-radius:11px;background:var(--bg);border:1px solid var(--line);}
+.tl-era .yr{font-size:11px;font-weight:700;color:var(--faint);}
+.tl-era .nm{font-size:13.5px;font-weight:700;margin:2px 0 6px;}
+.tl-era .ct{font-size:22px;font-weight:800;color:var(--green-d);font-variant-numeric:tabular-nums;}
+.tl-era .ct span{font-size:12px;color:var(--sub);font-weight:600;margin-left:2px;}
+.explorer{
+  display:grid;grid-template-columns:380px 1fr;gap:0;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;background:var(--card);height:680px;
+}
+.exp-side{display:flex;flex-direction:column;min-height:0;border-right:1px solid var(--line);background:#fff;}
+.exp-head{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:15px 16px 11px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.95);
+}
+.app-label{display:block;font-size:11px;font-weight:700;color:var(--coral-d);letter-spacing:.4px;text-transform:uppercase;}
+.app-count{display:block;margin-top:2px;font-size:18px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;}
+.saved-toggle{
+  display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:7px 10px;border-radius:17px;
+  border:1px solid var(--line);background:#fff;color:var(--sub);font-size:12px;font-weight:700;cursor:pointer;
+}
+.saved-toggle.on{border-color:var(--coral);background:var(--coral-l);color:var(--coral-d);}
+.saved-toggle b{font-variant-numeric:tabular-nums;}
+.exp-tabs{display:flex;flex-wrap:nowrap;gap:6px;padding:11px 16px 10px;overflow-x:auto;border-bottom:1px solid var(--line);}
+.tab{
+  padding:6px 11px;border-radius:15px;font-size:12px;font-weight:600;border:1px solid var(--line);
+  background:#fff;color:var(--sub);cursor:pointer;white-space:nowrap;transition:.12s;min-height:30px;
+}
+.tab:hover{border-color:var(--green);color:var(--green-d);}
+.tab.on{background:var(--green-d);border-color:var(--green-d);color:#fff;}
+.tab.zero{color:var(--faint);}
+.exp-controls{padding:0 16px 12px;display:flex;flex-direction:column;gap:8px;}
+.exp-controls input,.exp-controls select{
+  width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;font-size:13px;
+  color:var(--ink);background:#fff;outline:none;min-height:39px;
+}
+.exp-controls input:focus,.exp-controls select:focus{border-color:var(--green);}
+.ctrl-row{display:flex;gap:8px;}
+.quick-filters{display:flex;gap:6px;overflow-x:auto;padding:1px 0 2px;}
+.quick-filter{
+  flex:0 0 auto;padding:6px 9px;border:1px solid var(--line);border-radius:16px;background:var(--bg);
+  color:var(--sub);font-size:11.5px;font-weight:700;cursor:pointer;white-space:nowrap;transition:.12s;
+}
+.quick-filter:hover{border-color:var(--green);color:var(--green-d);}
+.quick-filter.on{background:var(--green-l);border-color:var(--green);color:var(--green-d);}
+.bounds-row{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  font-size:12px;color:var(--sub);padding-top:1px;
+}
+.bounds-row label{display:flex;align-items:center;gap:7px;cursor:pointer;}
+.bounds-row input{width:15px;height:15px;accent-color:var(--green-d);}
+.bounds-row button{
+  cursor:pointer;color:var(--green-d);font-size:12px;font-weight:700;padding:3px 0;
+}
+.exp-count{padding:0 16px 8px;font-size:12px;color:var(--sub);display:flex;justify-content:space-between;gap:10px;}
+.exp-count b{color:var(--green-d);}
+.exp-count .scope{color:var(--faint);}
+.exp-list{flex:1;overflow-y:auto;padding:0 8px 12px;}
+.f-card{padding:13px 10px;border-bottom:1px solid var(--line);cursor:pointer;border-radius:8px;}
+.f-card:hover{background:#FAFAF8;}
+.f-card.on{background:var(--green-l);}
+.f-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;}
+.f-name{font-size:14px;font-weight:700;min-width:0;overflow-wrap:anywhere;}
+.f-actions{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.f-year{font-size:11px;color:var(--faint);font-weight:600;font-variant-numeric:tabular-nums;}
+.save-btn{
+  width:28px;height:28px;border-radius:14px;border:1px solid var(--line);background:#fff;color:var(--faint);
+  cursor:pointer;font-size:14px;line-height:1;display:inline-flex;align-items:center;justify-content:center;
+}
+.save-btn:hover,.save-btn.on{border-color:var(--coral);background:var(--coral-l);color:var(--coral-d);}
+.f-meta{font-size:11.5px;color:var(--sub);margin-top:2px;overflow-wrap:anywhere;}
+.f-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;}
+.f-tag{font-size:10.5px;font-weight:700;color:var(--sub);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:3px 7px;}
+.f-tag.good{color:var(--green-d);background:var(--green-l);border-color:#D2E4D6;}
+.f-tag.warn{color:var(--coral-d);background:var(--coral-l);border-color:#F3D5DE;}
+.f-occ{display:flex;align-items:center;gap:9px;margin-top:8px;}
+.bar{flex:1;height:6px;border-radius:3px;background:#EEF0ED;overflow:hidden;min-width:64px;}
+.bar i{display:block;height:100%;border-radius:3px;background:var(--green);}
+.occ-t{font-size:11px;color:var(--sub);white-space:nowrap;font-variant-numeric:tabular-nums;}
+.exp-map{position:relative;min-width:0;background:linear-gradient(180deg,#FCFBF9,#F6F4EF);}
+#kakaoMap{position:absolute;inset:0;width:100%;height:100%;}
+.map-cap{
+  position:absolute;top:16px;left:20px;z-index:3;font-size:12px;color:var(--sub);
+  background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:10px;padding:8px 11px;
+}
+.map-cap b{color:var(--ink);font-size:14px;font-weight:800;}
+.legend{
+  position:absolute;left:20px;bottom:18px;z-index:3;background:rgba(255,255,255,.93);
+  border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:11px;color:var(--sub);
+}
+.legend .scale{display:flex;align-items:center;gap:5px;margin-top:5px;}
+.legend .sw{width:22px;height:8px;border-radius:2px;}
+.rpanel{
+  position:absolute;top:14px;right:16px;z-index:3;width:224px;background:rgba(255,255,255,.97);
+  border:1px solid var(--line);border-radius:12px;padding:15px;box-shadow:0 6px 20px rgba(0,0,0,.07);
+}
+.rpanel h4{margin:0 0 3px;font-size:15px;font-weight:800;}
+.rpanel .rsub{font-size:11px;color:var(--faint);margin-bottom:10px;}
+.rpanel .rr{display:flex;justify-content:space-between;gap:8px;padding:3px 0;font-size:12.5px;color:var(--sub);}
+.rpanel .rr b{color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+.rpanel .gline{display:flex;height:8px;border-radius:4px;overflow:hidden;margin:9px 0 4px;background:#f0f0ee;}
+.rpanel .gline .m{background:var(--blue);}
+.rpanel .gline .f{background:var(--coral);}
+.rpanel .glab{display:flex;justify-content:space-between;font-size:10.5px;color:var(--sub);}
+.rpanel hr{border:none;border-top:1px solid var(--line);margin:11px 0;}
+.map-status{
+  position:absolute;inset:0;z-index:2;display:none;align-items:center;justify-content:center;text-align:center;
+  padding:28px;background:linear-gradient(180deg,#FCFBF9,#F6F4EF);color:var(--sub);
+}
+.map-status.show{display:flex;}
+.map-status .box{
+  max-width:360px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+  box-shadow:0 8px 26px rgba(0,0,0,.06);
+}
+.map-status strong{display:block;color:var(--ink);font-size:15px;margin-bottom:6px;}
+.map-status code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--coral-d);}
+.fallback-preview{
+  position:relative;height:148px;margin-top:16px;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  background:radial-gradient(circle at 26% 32%,rgba(94,158,110,.14),transparent 22%),
+    radial-gradient(circle at 64% 54%,rgba(224,114,140,.12),transparent 24%),#FCFBF9;
+}
+.fallback-preview::before{
+  content:"";position:absolute;inset:12px;border:1px dashed rgba(94,158,110,.25);border-radius:45% 55% 50% 48%;
+}
+.fallback-dot{
+  position:absolute;transform:translate(-50%,-50%);border-radius:999px;background:var(--coral);
+  color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 5px 14px rgba(35,38,43,.14);border:2px solid #fff;font-variant-numeric:tabular-nums;
+}
+.selection-panel{
+  position:absolute;right:16px;bottom:18px;z-index:4;width:306px;background:rgba(255,255,255,.97);
+  border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);display:none;
+}
+.selection-panel.show{display:block;}
+.selection-panel .sel-kick{font-size:11px;color:var(--coral-d);font-weight:800;letter-spacing:.3px;text-transform:uppercase;}
+.selection-panel h4{margin:3px 0 5px;font-size:17px;line-height:1.25;font-weight:800;overflow-wrap:anywhere;}
+.selection-panel .sel-meta{font-size:12px;color:var(--sub);line-height:1.5;}
+.selection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:12px 0;}
+.selection-grid div{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:8px;}
+.selection-grid span{display:block;font-size:10.5px;color:var(--faint);font-weight:700;}
+.selection-grid b{font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums;}
+.selection-panel .sel-row{display:flex;justify-content:space-between;gap:10px;padding-top:7px;margin-top:7px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);}
+.selection-panel .sel-row b{color:var(--ink);text-align:right;}
+.selection-panel .sel-actions{display:flex;gap:8px;margin-top:12px;}
+.selection-panel .sel-actions button{
+  flex:1;min-height:34px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--sub);
+  font-size:12px;font-weight:800;cursor:pointer;
+}
+.selection-panel .sel-actions button.primary{background:var(--green-d);border-color:var(--green-d);color:#fff;}
+.facility-overlay{
+  width:260px;background:#fff;border:1px solid rgba(35,38,43,.12);border-radius:12px;
+  box-shadow:var(--shadow);overflow:hidden;font-family:"Pretendard","Apple SD Gothic Neo",system-ui,sans-serif;
+}
+.facility-overlay .ov-head{display:flex;justify-content:space-between;gap:12px;padding:13px 14px 8px;}
+.facility-overlay .ov-name{font-size:15px;font-weight:800;color:var(--ink);line-height:1.25;overflow-wrap:anywhere;}
+.facility-overlay .ov-close{cursor:pointer;color:var(--faint);font-size:17px;line-height:1;padding:0 2px;}
+.facility-overlay .ov-body{padding:0 14px 14px;color:var(--sub);font-size:12px;}
+.facility-overlay .ov-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:8px 0 9px;}
+.facility-overlay .ov-stat{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 8px;}
+.facility-overlay .ov-stat span{display:block;font-size:10.5px;color:var(--faint);font-weight:600;}
+.facility-overlay .ov-stat b{font-size:13px;color:var(--ink);font-variant-numeric:tabular-nums;}
+.facility-overlay .ov-line{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:7px;margin-top:7px;}
+.facility-overlay .ov-line b{color:var(--ink);font-weight:700;text-align:right;}
+.dist{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.dist-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;}
+.dist-card h3{margin:0 0 4px;font-size:16px;font-weight:800;}
+.dist-card .dsub{font-size:12.5px;color:var(--sub);margin-bottom:18px;}
+.dbar{display:flex;align-items:center;gap:12px;margin-bottom:11px;}
+.dbar .dl{width:150px;font-size:12.5px;color:var(--ink-soft);flex-shrink:0;}
+.dbar .dt{flex:1;height:22px;background:#F0F1EE;border-radius:6px;overflow:hidden;}
+.dbar .dt i{display:block;height:100%;background:var(--green);border-radius:6px;}
+.dbar .dv{width:64px;text-align:right;font-size:12.5px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;flex-shrink:0;}
+.dbar.alt .dt i{background:var(--coral);}
+.foot{border-top:1px solid var(--line);padding:36px 0 60px;font-size:12.5px;color:var(--sub);}
+.foot .fn{max-width:82ch;margin-bottom:10px;line-height:1.7;}
+.foot .flag{
+  background:var(--coral-l);border:1px solid #F3D5DE;border-radius:9px;padding:10px 13px;
+  color:var(--coral-d);font-size:12px;max-width:82ch;margin-top:8px;
+}
+.foot b{color:var(--ink-soft);}
+.empty{
+  padding:40px 20px;text-align:center;color:var(--faint);font-size:13px;
+}
+@media(max-width:960px){
+  .explorer{grid-template-columns:1fr;height:auto;}
+  .exp-side{border-right:none;border-bottom:1px solid var(--line);height:520px;}
+  .exp-map{height:460px;}
+  .rpanel{top:auto;right:12px;left:12px;bottom:82px;width:auto;max-width:320px;}
+  .selection-panel{right:12px;left:12px;bottom:16px;width:auto;max-width:360px;}
+  .legend{bottom:auto;top:64px;}
+}
+@media(max-width:900px){
+  .kpis{grid-template-columns:repeat(2,1fr);}
+  .tl-eras{grid-template-columns:repeat(2,1fr);}
+  .dist{grid-template-columns:1fr;}
+  .hero h1{font-size:34px;}
+  .nav{display:none;}
+}
+@media(max-width:560px){
+  .wrap{padding:0 16px;}
+  .hero{padding:54px 0 40px;}
+  .hero h1{font-size:31px;}
+  .kpis{grid-template-columns:1fr 1fr;gap:10px;}
+  .kpi{padding:16px 14px;min-height:104px;}
+  .kpi .num{font-size:28px;}
+  .timeline-card{padding:18px 14px 14px;}
+  .tl-svg{height:230px;}
+  .tl-eras{grid-template-columns:1fr;}
+  .ctrl-row{flex-direction:column;}
+  .exp-side{height:560px;}
+  .exp-map{height:430px;}
+  .map-cap{left:12px;top:12px;}
+  .legend{left:12px;top:62px;bottom:auto;}
+  .rpanel{display:none;}
+  .selection-panel{left:12px;right:12px;bottom:12px;padding:13px;}
+  .selection-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .fallback-preview{height:120px;}
+  .occ-t{white-space:normal;text-align:right;}
+  .dbar{align-items:flex-start;}
+  .dbar .dl{width:108px;}
+}
+::-webkit-scrollbar{width:7px;}
+::-webkit-scrollbar-thumb{background:#DAD6CE;border-radius:4px;}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="mark">
+      <span class="name">그룹<b>홈맵</b></span>
+      <span class="sub">한국아동청소년그룹홈협의회</span>
+    </div>
+    <nav class="nav" aria-label="주요 섹션">
+      <a href="#story">현황</a>
+      <a href="#timeline">30년의 기록</a>
+      <a href="#explore">시설 찾기</a>
+      <a href="#dist">시설 구성</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="story">
+    <div class="wrap">
+      <span class="eyebrow">보건복지부 2025 아동복지시설 현황Ⅱ · 2024.12.31. 기준</span>
+      <h1>가정을 잃은 아이들에게, <span class="g">가정 같은 집</span>이 되어주는 <span class="c">520개의 공간</span></h1>
+      <p class="lead">아동공동생활가정(그룹홈)은 시설장 1명과 보육사들이 5~7명의 아이와 한 지붕 아래 살며 24시간을 함께하는 소규모 보호시설입니다. 전국에 흩어진 520개의 집, 그 안의 2,505명 아이들의 현황을 한눈에 담았습니다.</p>
+      <div class="hero-actions">
+        <a class="hero-btn primary" href="#explore">지도 바로 탐색</a>
+        <a class="hero-btn" href="#timeline">30년 흐름 보기</a>
+      </div>
+      <div class="kpis" id="kpis"></div>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kick">30년의 기록</div>
+        <h2>몇 채의 집에서, 전국의 보호망으로</h2>
+        <p>연도별 신규 설치 현황입니다. 2004년 아동복지법 개정으로 공동생활가정이 정식 아동복지시설이 되자, 이듬해부터 설치가 폭발적으로 늘었습니다.</p>
+      </div>
+      <div class="timeline-card">
+        <svg class="tl-svg" id="tlSvg" viewBox="0 0 1080 260" preserveAspectRatio="none" role="img" aria-label="1991년부터 2024년까지 그룹홈 신규 설치 추이"></svg>
+        <div class="tl-eras" id="tlEras"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="explore">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kick">시설 찾기</div>
+        <h2>지역별로 살펴보기</h2>
+        <p>개별 핀은 시설 위치, 클러스터는 밀집 지역의 시설 수를 보여줍니다. 색은 충원율 기준으로 빈자리가 많을수록 초록, 만실에 가까울수록 산호색에 가깝습니다.</p>
+      </div>
+      <div class="explorer">
+        <aside class="exp-side" aria-label="시설 목록과 필터">
+          <div class="exp-head">
+            <div>
+              <span class="app-label">Live Explorer</span>
+              <strong class="app-count" id="sideRatio">0 / 520</strong>
+            </div>
+            <button class="saved-toggle" id="savedOnly" type="button">♡ 관심 <b id="savedCount">0</b></button>
+          </div>
+          <div class="exp-tabs" id="tabs"></div>
+          <div class="exp-controls">
+            <input id="q" placeholder="시설명 검색" autocomplete="off">
+            <div class="ctrl-row">
+              <select id="sg" aria-label="시군구 선택"></select>
+              <select id="sort" aria-label="정렬">
+                <option value="name">이름순</option>
+                <option value="rate_desc">충원율 높은순</option>
+                <option value="vac_desc">빈자리 많은순</option>
+                <option value="year_desc">최근 설치순</option>
+                <option value="year_asc">오래된순</option>
+                <option value="size_desc">정원 큰순</option>
+              </select>
+            </div>
+            <div class="quick-filters" id="quickFilters" aria-label="빠른 필터"></div>
+            <div class="bounds-row">
+              <label><input type="checkbox" id="boundsOnly" checked>현재 지도 화면</label>
+              <button type="button" id="resetView">전국 보기</button>
+            </div>
+          </div>
+          <div class="exp-count"><span><b id="cnt">0</b>곳</span><span class="scope" id="countScope">전체 기준</span></div>
+          <div class="exp-list" id="list"></div>
+        </aside>
+        <section class="exp-map" aria-label="그룹홈 지도">
+          <div id="kakaoMap"></div>
+          <div class="map-status" id="mapStatus">
+            <div class="box">
+              <strong>카카오 지도 키가 필요합니다</strong>
+              <span>배포 도메인에 등록한 JavaScript 키를 <code>GROUPHOME_MAP_CONFIG.kakaoJavaScriptKey</code>에 입력하세요.</span>
+              <div class="fallback-preview" id="fallbackPreview" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="map-cap">지도 탐색 · <b id="mapSel">전국</b></div>
+          <div class="legend">핀 색 = 충원율
+            <div class="scale">
+              <span>빈자리↑</span>
+              <span class="sw" style="background:#5E9E6E"></span>
+              <span class="sw" style="background:#C6B36A"></span>
+              <span class="sw" style="background:#E0728C"></span>
+              <span>만실</span>
+            </div>
+          </div>
+          <div class="rpanel" id="rpanel" style="display:none"></div>
+          <div class="selection-panel" id="selectionPanel"></div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dist">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kick">시설 구성</div>
+        <h2>어떤 집들로 이루어져 있나</h2>
+        <p>대부분의 그룹홈은 정원 7명 규모의 소규모 가정이며, 절반 이상이 2005~2015년 전문화기에 문을 열었습니다.</p>
+      </div>
+      <div class="dist">
+        <div class="dist-card">
+          <h3>시대별 설치</h3>
+          <div class="dsub">협의회 시대 구분 기준</div>
+          <div id="eraBars"></div>
+        </div>
+        <div class="dist-card">
+          <h3>정원 규모</h3>
+          <div class="dsub">인가 정원 기준 시설 수</div>
+          <div id="sizeBars"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fn"><b>자료 출처</b> · 보건복지부 「2025년도 아동복지시설 현황Ⅱ(공동생활가정)」, 2024년 12월 31일 기준. 개별 시설의 정원·현원·종사자·설치일·소재지는 원문 PDF에서 추출했으며, 성별·연령(미취학·초등재학) 구분은 시·도 단위 공식 집계입니다(개별 시설 단위 미제공).</div>
+    <div class="fn"><b>지도 표시 방식</b> · 배포본은 `data.json`에 저장된 좌표만 사용합니다. 카카오 REST 키는 빌드 단계의 일회성 주소 지오코딩에만 쓰며, 브라우저에는 도메인 제한된 JavaScript 키만 노출합니다.</div>
+    <div class="flag" id="flagBox"></div>
+  </div>
+</footer>
+
+<script>
+window.GROUPHOME_MAP_CONFIG = {
+  // 보안 조치: 기존 키(647726d9...)는 스크린샷 노출 이력이 있어 폐기함.
+  // Kakao Developers에서 새 키를 발급받아 아래 절차로 교체할 것 (README.md "Kakao API 키 적용" 참고).
+  //   1) 기존 애플리케이션 키 재발급(또는 신규 앱 생성)
+  //   2) 플랫폼 > Web에 배포 도메인 + http://localhost:8080 등록
+  //   3) set-kakao-js-key-windows.cmd 실행하여 새 키를 이 값에 반영
+  kakaoJavaScriptKey: "YOUR_KAKAO_JAVASCRIPT_KEY"
+};
+</script>
+<script>
+const state = {
+  sido: "",
+  sigungu: "",
+  q: "",
+  sort: "name",
+  quickFilter: "",
+  boundsOnly: true,
+  savedOnly: false,
+  saved: new Set(),
+  selectedId: "",
+  mapReady: false
+};
+const fmt = (n) => Number(n || 0).toLocaleString("ko-KR");
+let DATA;
+let FAC = [];
+let REG = [];
+let META = {};
+let SHORT = {};
+let map;
+let clusterer;
+let overlay;
+let markerById = new Map();
+let visibleIdsInBounds = null;
+const SAVED_KEY = "grouphome-map-saved";
+const QUICK_FILTERS = [
+  { key: "", label: "전체" },
+  { key: "vacancy", label: "빈자리 있음" },
+  { key: "full", label: "만실" },
+  { key: "recent", label: "최근 5년" },
+  { key: "seven", label: "정원 7명" },
+  { key: "flagged", label: "확인 필요" }
+];
+
+function escapeHtml(value){
+  return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[ch]));
+}
+
+function loadSaved(){
+  try {
+    state.saved = new Set(JSON.parse(localStorage.getItem(SAVED_KEY) || "[]"));
+  } catch {
+    state.saved = new Set();
+  }
+}
+
+function persistSaved(){
+  localStorage.setItem(SAVED_KEY, JSON.stringify([...state.saved]));
+}
+
+function toggleSaved(id){
+  if(state.saved.has(id)) state.saved.delete(id);
+  else state.saved.add(id);
+  persistSaved();
+  renderAll();
+}
+
+function occColor(rate){
+  const t = Math.max(0, Math.min(1, Number(rate || 0) / 100));
+  const lerp = (a,b,u) => Math.round(a + (b - a) * u);
+  let c1, c2, u;
+  if(t < 0.5){ c1=[94,158,110]; c2=[198,179,106]; u=t/0.5; }
+  else{ c1=[198,179,106]; c2=[224,114,140]; u=(t-0.5)/0.5; }
+  return `rgb(${lerp(c1[0],c2[0],u)},${lerp(c1[1],c2[1],u)},${lerp(c1[2],c2[2],u)})`;
+}
+
+function markerImage(color){
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="42" viewBox="0 0 34 42"><path d="M17 41s13-12.4 13-24A13 13 0 1 0 4 17c0 11.6 13 24 13 24Z" fill="${color}" stroke="white" stroke-width="2"/><circle cx="17" cy="17" r="5.4" fill="white" opacity=".92"/></svg>`;
+  const uri = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+  return new kakao.maps.MarkerImage(uri, new kakao.maps.Size(34, 42), { offset: new kakao.maps.Point(17, 40) });
+}
+
+function renderKpis(){
+  const n = META.nat;
+  document.getElementById("kpis").innerHTML = `
+    <div class="kpi k1"><div class="num">${fmt(n.facilities)}</div><div class="lab">전국 그룹홈</div><div class="hint">세종 0곳 포함 17개 시·도</div></div>
+    <div class="kpi k2"><div class="num">${fmt(n.current)}</div><div class="lab">보호 아동</div><div class="hint">남 ${fmt(n.male)} · 여 ${fmt(n.female)}</div></div>
+    <div class="kpi k3"><div class="num">${fmt(n.staff)}</div><div class="lab">종사자</div><div class="hint">종사자 1명당 아동 ${n.ratio}명</div></div>
+    <div class="kpi k4"><div class="num">${fmt(n.vacancy)}</div><div class="lab">현재 빈자리</div><div class="hint">충원율 ${n.rate}%</div></div>`;
+}
+
+function renderTimeline(){
+  const svg = document.getElementById("tlSvg");
+  const data = META.years;
+  const W=1080,H=260,padB=34,padT=18,padL=8,padR=8;
+  const maxN = Math.max(...data.map(d=>d.n));
+  const x = i => padL + (W-padL-padR)*i/(data.length-1);
+  const y = v => padT + (H-padT-padB)*(1-v/maxN);
+  const idxOf = yr => data.findIndex(d=>d.y===yr);
+  const bands = [
+    {x0:1991,x1:1999,fill:"#F2EEE6"},
+    {x0:2000,x1:2004,fill:"#EAF1EA"},
+    {x0:2005,x1:2015,fill:"#F7EEF1"},
+    {x0:2016,x1:2024,fill:"#EEF2F6"}
+  ];
+  let bg = "";
+  bands.forEach(b => {
+    const i0=idxOf(b.x0), i1=idxOf(b.x1);
+    const bandWidth=(W-padL-padR)/(data.length-1);
+    const xa=x(i0)-bandWidth/2;
+    const xb=x(i1)+bandWidth/2;
+    bg += `<rect x="${Math.max(xa,0)}" y="${padT}" width="${xb-Math.max(xa,0)}" height="${H-padT-padB}" fill="${b.fill}"/>`;
+  });
+  let area = `M ${x(0)} ${y(0)}`;
+  data.forEach((d,i)=>{ area += ` L ${x(i)} ${y(d.n)}`; });
+  area += ` L ${x(data.length-1)} ${y(0)} Z`;
+  let line = `M ${x(0)} ${y(data[0].n)}`;
+  data.forEach((d,i)=>{ if(i) line += ` L ${x(i)} ${y(d.n)}`; });
+  let xl = "";
+  data.forEach((d,i)=>{ if(d.y%4===1 || d.y===2024) xl += `<text x="${x(i)}" y="${H-14}" font-size="11" fill="#9AA0A6" text-anchor="middle">${d.y}</text>`; });
+  const i05 = idxOf(2005);
+  const ann = `<line x1="${x(i05)}" y1="${y(data[i05].n)}" x2="${x(i05)}" y2="${padT+6}" stroke="#C24E6C" stroke-width="1" stroke-dasharray="3 3"/>
+    <circle cx="${x(i05)}" cy="${y(data[i05].n)}" r="4" fill="#C24E6C"/>
+    <text x="${x(i05)+8}" y="${padT+16}" font-size="12" font-weight="700" fill="#C24E6C">2004년 법제화 → 2005년 신규 33곳</text>`;
+  svg.innerHTML = `${bg}
+    <path d="${area}" fill="url(#tlg)" opacity="0.5"/>
+    <path d="${line}" fill="none" stroke="#3F7A51" stroke-width="2.5" stroke-linejoin="round"/>
+    ${data.map((d,i)=>`<circle cx="${x(i)}" cy="${y(d.n)}" r="2.6" fill="#3F7A51"/>`).join("")}
+    ${ann}${xl}
+    <defs><linearGradient id="tlg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E9E6E" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5E9E6E" stop-opacity="0.03"/>
+    </linearGradient></defs>`;
+  document.getElementById("tlEras").innerHTML = META.eras.map(e => {
+    const [nm,yr] = e.era.split(" (");
+    return `<div class="tl-era"><div class="yr">${yr.replace(")","")}</div><div class="nm">${nm}</div>
+      <div class="ct">${e.n}<span>곳 설치</span></div></div>`;
+  }).join("");
+}
+
+function renderDist(){
+  const eb = document.getElementById("eraBars");
+  const emax = Math.max(...META.eras.map(e=>e.n));
+  eb.innerHTML = META.eras.map(e => {
+    const [nm,yr] = e.era.split(" (");
+    return `<div class="dbar"><div class="dl">${nm} <span style="color:#9AA0A6">${yr.replace(")","")}</span></div>
+      <div class="dt"><i style="width:${e.n/emax*100}%"></i></div><div class="dv">${e.n}곳</div></div>`;
+  }).join("");
+  const sb = document.getElementById("sizeBars");
+  const smax = Math.max(...META.sizes.map(s=>s.n));
+  sb.innerHTML = META.sizes.map(s =>
+    `<div class="dbar alt"><div class="dl">정원 ${s.q}명</div>
+      <div class="dt"><i style="width:${s.n/smax*100}%"></i></div><div class="dv">${s.n}곳</div></div>`
+  ).join("");
+}
+
+function renderFlag(){
+  const f = FAC.find(x => x.dataQuality?.some(note => note.includes("원문 정원 22명")));
+  document.getElementById("flagBox").innerHTML = f
+    ? `⚠ <b>데이터 확인 필요</b> · 경기도 파주 「${escapeHtml(f.name)}」은 원문 PDF에 정원이 22명으로 인쇄되어 있으나(타 시설 대부분 5~7명), 지역 합계와 대조 시 오기로 추정되어 8명으로 보정해 표시했습니다. 협의회 내부 확인을 권합니다.`
+    : "";
+}
+
+function renderTabs(){
+  const tabs = document.getElementById("tabs");
+  let html = `<button class="tab ${state.sido===""?"on":""}" data-sido="" type="button">전국 ${FAC.length}</button>`;
+  REG.slice().sort((a,b) => b.count-a.count || a.short.localeCompare(b.short,"ko")).forEach(r => {
+    html += `<button class="tab ${state.sido===r.sido?"on":""} ${r.count===0?"zero":""}" data-sido="${escapeHtml(r.sido)}" type="button">${escapeHtml(r.short)} ${r.count}</button>`;
+  });
+  tabs.innerHTML = html;
+  tabs.querySelectorAll(".tab").forEach(el => {
+    el.addEventListener("click", () => {
+      state.sido = el.dataset.sido;
+      state.sigungu = "";
+      state.selectedId = "";
+      if (overlay) overlay.setMap(null);
+      renderAll();
+      fitToCurrentSelection();
+    });
+  });
+}
+
+function renderQuickFilters(){
+  const box = document.getElementById("quickFilters");
+  box.innerHTML = QUICK_FILTERS.map(filter =>
+    `<button class="quick-filter ${state.quickFilter===filter.key?"on":""}" data-filter="${filter.key}" type="button">${filter.label}</button>`
+  ).join("");
+  box.querySelectorAll(".quick-filter").forEach(button => {
+    button.addEventListener("click", () => {
+      state.quickFilter = button.dataset.filter;
+      state.selectedId = "";
+      renderAll();
+      fitToCurrentSelection();
+    });
+  });
+}
+
+function renderExplorerStats(items){
+  document.getElementById("sideRatio").textContent = `${fmt(items.length)} / ${fmt(FAC.length)}`;
+  document.getElementById("savedCount").textContent = fmt(state.saved.size);
+  document.getElementById("savedOnly").classList.toggle("on", state.savedOnly);
+}
+
+function renderSigunguOptions(){
+  const select = document.getElementById("sg");
+  if(!state.sido){
+    select.innerHTML = `<option value="">시·군·구 전체</option>`;
+    select.disabled = true;
+    return;
+  }
+  const groups = new Map();
+  FAC.filter(f=>f.sido===state.sido).forEach(f => {
+    if(!f.sigungu) return;
+    groups.set(f.sigungu, (groups.get(f.sigungu)||0)+1);
+  });
+  const options = [...groups.entries()].sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0],"ko"));
+  select.disabled = options.length === 0;
+  select.innerHTML = `<option value="">시·군·구 전체</option>` + options.map(([name,count]) =>
+    `<option value="${escapeHtml(name)}" ${state.sigungu===name?"selected":""}>${escapeHtml(name)} (${count})</option>`
+  ).join("");
+}
+
+function matchesQuickFilter(f){
+  if(state.quickFilter === "vacancy") return f.vacancy > 0;
+  if(state.quickFilter === "full") return f.quota > 0 && f.vacancy === 0;
+  if(state.quickFilter === "recent") return (f.openedYear || 0) >= 2020;
+  if(state.quickFilter === "seven") return f.quota === 7;
+  if(state.quickFilter === "flagged") return (f.dataQuality || []).length > 0;
+  return true;
+}
+
+function baseFiltered(){
+  let items = FAC;
+  if(state.sido) items = items.filter(f=>f.sido===state.sido);
+  if(state.sigungu) items = items.filter(f=>f.sigungu===state.sigungu);
+  if(state.savedOnly) items = items.filter(f=>state.saved.has(f.id));
+  if(state.quickFilter) items = items.filter(matchesQuickFilter);
+  if(state.q) {
+    const query = state.q.toLocaleLowerCase("ko-KR");
+    items = items.filter(f =>
+      f.name.toLocaleLowerCase("ko-KR").includes(query) ||
+      f.address.toLocaleLowerCase("ko-KR").includes(query)
+    );
+  }
+  return items;
+}
+
+function filteredForList(){
+  let items = baseFiltered();
+  if(state.boundsOnly && state.mapReady && visibleIdsInBounds) {
+    items = items.filter(f => visibleIdsInBounds.has(f.id));
+  }
+  items = items.slice();
+  const sort = state.sort;
+  if(sort === "rate_desc") items.sort((x,y)=>y.occupancyRate-x.occupancyRate || x.name.localeCompare(y.name,"ko"));
+  else if(sort === "vac_desc") items.sort((x,y)=>y.vacancy-x.vacancy || x.name.localeCompare(y.name,"ko"));
+  else if(sort === "year_desc") items.sort((x,y)=>(y.openedYear||0)-(x.openedYear||0));
+  else if(sort === "year_asc") items.sort((x,y)=>(x.openedYear||9999)-(y.openedYear||9999));
+  else if(sort === "size_desc") items.sort((x,y)=>y.quota-x.quota || x.name.localeCompare(y.name,"ko"));
+  else items.sort((x,y)=>x.name.localeCompare(y.name,"ko"));
+  return items;
+}
+
+function renderList(){
+  const items = filteredForList();
+  renderExplorerStats(items);
+  document.getElementById("cnt").textContent = fmt(items.length);
+  document.getElementById("mapSel").textContent = state.sido ? SHORT[state.sido] : "전국";
+  document.getElementById("countScope").textContent = state.boundsOnly && state.mapReady ? "지도 화면 기준" : "전체 기준";
+  const list = document.getElementById("list");
+  if(!items.length){
+    list.innerHTML = `<div class="empty">조건에 맞는 시설이 없습니다.</div>`;
+    return;
+  }
+  list.innerHTML = items.map(f => {
+    const color = occColor(f.occupancyRate);
+    const selected = state.selectedId === f.id;
+    const saved = state.saved.has(f.id);
+    const vacancyTag = f.quota > 0 && f.vacancy === 0
+      ? `<span class="f-tag warn">만실</span>`
+      : `<span class="f-tag good">빈자리 ${fmt(f.vacancy)}</span>`;
+    const qualityTag = f.dataQuality?.length ? `<span class="f-tag warn">확인 필요</span>` : "";
+    return `<article class="f-card ${selected?"on":""}" data-id="${f.id}">
+      <div class="f-top">
+        <div class="f-name">${escapeHtml(f.name)}</div>
+        <div class="f-actions"><div class="f-year">${f.openedYear || "-"}년</div><button class="save-btn ${saved?"on":""}" data-save="${f.id}" type="button" aria-label="관심 시설 저장">${saved?"♥":"♡"}</button></div>
+      </div>
+      <div class="f-meta">${escapeHtml(f.sigungu || SHORT[f.sido] || f.sido)} · 시설장 ${escapeHtml(f.director || "-")} · 종사자 ${fmt(f.staff)}명</div>
+      <div class="f-tags">${vacancyTag}<span class="f-tag">정원 ${fmt(f.quota)}</span><span class="f-tag">${escapeHtml(f.era.split(" ")[0] || "-")}</span>${qualityTag}</div>
+      <div class="f-occ">
+        <div class="bar"><i style="width:${Math.min(f.occupancyRate,100)}%;background:${color}"></i></div>
+        <div class="occ-t">현원 ${fmt(f.current)}/정원 ${fmt(f.quota)} (${fmt(f.occupancyRate)}%)</div>
+      </div>
+    </article>`;
+  }).join("");
+  list.querySelectorAll(".f-card").forEach(card => {
+    card.addEventListener("click", () => selectFacility(card.dataset.id, { pan: true, open: true }));
+  });
+  list.querySelectorAll("[data-save]").forEach(button => {
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleSaved(button.dataset.save);
+    });
+  });
+}
+
+function renderPanel(){
+  const p = document.getElementById("rpanel");
+  if(!state.sido){
+    p.style.display = "none";
+    return;
+  }
+  const r = REG.find(x=>x.sido===state.sido);
+  if(!r){
+    p.style.display = "none";
+    return;
+  }
+  p.style.display = "block";
+  const mPct = r.current ? Math.round(r.male / r.current * 100) : 0;
+  p.innerHTML = `<h4>${escapeHtml(r.short)}</h4><div class="rsub">공동생활가정 공식 통계</div>
+    <div class="rr"><span>시설 수</span><b>${fmt(r.count)}곳</b></div>
+    <div class="rr"><span>종사자</span><b>${fmt(r.staff)}명</b></div>
+    <div class="rr"><span>정원 / 현원</span><b>${fmt(r.quota)} / ${fmt(r.current)}</b></div>
+    <div class="rr"><span>충원율</span><b>${fmt(r.occupancyRate)}%</b></div>
+    <hr>
+    <div class="gline"><div class="m" style="width:${mPct}%"></div><div class="f" style="width:${Math.max(0,100-mPct)}%"></div></div>
+    <div class="glab"><span>남 ${fmt(r.male)}</span><span>여 ${fmt(r.female)}</span></div>
+    <hr>
+    <div class="rr"><span>미취학 (0~3세)</span><b>${fmt(r.pre0_3)}</b></div>
+    <div class="rr"><span>미취학 (3~6세)</span><b>${fmt(r.pre3_6)}</b></div>
+    <div class="rr"><span>초등재학</span><b>${fmt(r.elementary)}</b></div>`;
+}
+
+function renderSelectionPanel(){
+  const panel = document.getElementById("selectionPanel");
+  const f = FAC.find(item => item.id === state.selectedId);
+  if(!f){
+    panel.classList.remove("show");
+    panel.innerHTML = "";
+    return;
+  }
+  const color = occColor(f.occupancyRate);
+  const saved = state.saved.has(f.id);
+  const quality = f.dataQuality?.length
+    ? `<div class="sel-row"><span>비고</span><b>${escapeHtml(f.dataQuality[0])}</b></div>`
+    : "";
+  panel.innerHTML = `<div class="sel-kick">Selected facility</div>
+    <h4>${escapeHtml(f.name)}</h4>
+    <div class="sel-meta">${escapeHtml(f.sido)} · ${escapeHtml(f.sigungu || "-")}<br>${escapeHtml(f.address)}</div>
+    <div class="selection-grid">
+      <div><span>정원</span><b>${fmt(f.quota)}</b></div>
+      <div><span>현원</span><b>${fmt(f.current)}</b></div>
+      <div><span>충원율</span><b style="color:${color}">${fmt(f.occupancyRate)}%</b></div>
+    </div>
+    <div class="sel-row"><span>시설장</span><b>${escapeHtml(f.director || "-")}</b></div>
+    <div class="sel-row"><span>종사자수</span><b>${fmt(f.staff)}명</b></div>
+    <div class="sel-row"><span>설치연도</span><b>${f.openedYear || "-"}</b></div>
+    <div class="sel-row"><span>연락처</span><b>${escapeHtml(f.phone || "-")}</b></div>
+    ${quality}
+    <div class="sel-actions">
+      <button class="primary" type="button" data-detail-save="${f.id}">${saved ? "♥ 관심 저장됨" : "♡ 관심 저장"}</button>
+      <button type="button" data-detail-clear>닫기</button>
+    </div>`;
+  panel.classList.add("show");
+}
+
+function renderFallbackPreview(){
+  const preview = document.getElementById("fallbackPreview");
+  if(!preview) return;
+  const groups = new Map();
+  FAC.forEach(f => {
+    if(!Number.isFinite(f.lat) || !Number.isFinite(f.lng)) return;
+    const key = `${f.lat.toFixed(3)},${f.lng.toFixed(3)}`;
+    const current = groups.get(key) || { lat:f.lat, lng:f.lng, count:0 };
+    current.count += 1;
+    groups.set(key, current);
+  });
+  const dots = [...groups.values()]
+    .sort((a,b)=>b.count-a.count)
+    .slice(0, 36)
+    .map(group => {
+      const x = Math.max(6, Math.min(94, ((group.lng - 124.5) / 7.5) * 100));
+      const y = Math.max(7, Math.min(93, ((39.2 - group.lat) / 6.4) * 100));
+      const size = Math.max(16, Math.min(36, 14 + Math.sqrt(group.count) * 3.2));
+      const color = group.count >= 20 ? "var(--coral)" : group.count >= 8 ? "#C6B36A" : "var(--green)";
+      return `<span class="fallback-dot" style="left:${x}%;top:${y}%;width:${size}px;height:${size}px;background:${color}">${group.count}</span>`;
+    });
+  preview.innerHTML = dots.join("");
+}
+
+function renderMarkers(){
+  if(!state.mapReady || !clusterer) return;
+  clusterer.clear();
+  markerById.clear();
+  const markers = baseFiltered().filter(f => Number.isFinite(f.lat) && Number.isFinite(f.lng)).map(f => {
+    const marker = new kakao.maps.Marker({
+      position: new kakao.maps.LatLng(f.lat, f.lng),
+      image: markerImage(occColor(f.occupancyRate)),
+      title: f.name
+    });
+    marker.__facilityId = f.id;
+    kakao.maps.event.addListener(marker, "click", () => selectFacility(f.id, { pan: false, open: true }));
+    markerById.set(f.id, marker);
+    return marker;
+  });
+  clusterer.addMarkers(markers);
+  updateVisibleIdsFromBounds();
+}
+
+function updateVisibleIdsFromBounds(){
+  if(!state.mapReady || !map) return;
+  const bounds = map.getBounds();
+  visibleIdsInBounds = new Set();
+  for(const f of baseFiltered()){
+    if(!Number.isFinite(f.lat) || !Number.isFinite(f.lng)) continue;
+    const pos = new kakao.maps.LatLng(f.lat, f.lng);
+    if(bounds.contain(pos)) visibleIdsInBounds.add(f.id);
+  }
+  renderList();
+}
+
+function openFacilityOverlay(f){
+  if(!state.mapReady || !map) return;
+  const marker = markerById.get(f.id);
+  if(!marker) return;
+  if(overlay) overlay.setMap(null);
+  const color = occColor(f.occupancyRate);
+  const content = `<div class="facility-overlay">
+    <div class="ov-head">
+      <div class="ov-name">${escapeHtml(f.name)}</div>
+      <button class="ov-close" type="button" aria-label="닫기" data-close-overlay>×</button>
+    </div>
+    <div class="ov-body">
+      <div class="ov-grid">
+        <div class="ov-stat"><span>정원·현원</span><b>${fmt(f.quota)} / ${fmt(f.current)}</b></div>
+        <div class="ov-stat"><span>충원율</span><b style="color:${color}">${fmt(f.occupancyRate)}%</b></div>
+      </div>
+      <div class="ov-line"><span>시설장</span><b>${escapeHtml(f.director || "-")}</b></div>
+      <div class="ov-line"><span>종사자수</span><b>${fmt(f.staff)}명</b></div>
+      <div class="ov-line"><span>설치연도</span><b>${f.openedYear || "-"}</b></div>
+      <div class="ov-line"><span>연락처</span><b>${escapeHtml(f.phone || "-")}</b></div>
+    </div>
+  </div>`;
+  overlay = new kakao.maps.CustomOverlay({
+    content,
+    position: marker.getPosition(),
+    yAnchor: 1.08,
+    zIndex: 9
+  });
+  overlay.setMap(map);
+}
+
+function selectFacility(id, options = {}){
+  const f = FAC.find(item => item.id === id);
+  if(!f) return;
+  state.selectedId = id;
+  if(options.pan && state.mapReady && map) {
+    map.panTo(new kakao.maps.LatLng(f.lat, f.lng));
+  }
+  if(options.open) openFacilityOverlay(f);
+  renderSelectionPanel();
+  renderList();
+  const card = document.querySelector(`.f-card[data-id="${CSS.escape(id)}"]`);
+  if(card) card.scrollIntoView({ block: "nearest" });
+}
+
+function fitToCurrentSelection(){
+  if(!state.mapReady || !map) return;
+  const items = baseFiltered().filter(f => Number.isFinite(f.lat) && Number.isFinite(f.lng));
+  if(items.length){
+    const bounds = new kakao.maps.LatLngBounds();
+    items.forEach(f => bounds.extend(new kakao.maps.LatLng(f.lat, f.lng)));
+    map.setBounds(bounds, 48, 48, 48, 48);
+    return;
+  }
+  const region = REG.find(r => r.sido === state.sido);
+  if(region?.center){
+    map.setCenter(new kakao.maps.LatLng(region.center.lat, region.center.lng));
+    map.setLevel(8);
+  } else {
+    map.setCenter(new kakao.maps.LatLng(36.3, 127.9));
+    map.setLevel(13);
+  }
+}
+
+function renderAll(){
+  renderTabs();
+  renderQuickFilters();
+  renderSigunguOptions();
+  renderPanel();
+  renderSelectionPanel();
+  renderMarkers();
+  renderList();
+}
+
+function loadKakaoMaps(){
+  const key = window.GROUPHOME_MAP_CONFIG?.kakaoJavaScriptKey;
+  const status = document.getElementById("mapStatus");
+  const statusTitle = status.querySelector("strong");
+  const statusText = status.querySelector("span");
+  if(!key || key === "YOUR_KAKAO_JAVASCRIPT_KEY"){
+    status.classList.add("show");
+    statusTitle.textContent = "카카오 지도 키가 필요합니다";
+    statusText.innerHTML = '배포 도메인에 등록한 JavaScript 키를 <code>GROUPHOME_MAP_CONFIG.kakaoJavaScriptKey</code>에 입력하세요.';
+    state.mapReady = false;
+    renderList();
+    return;
+  }
+  status.classList.add("show");
+  statusTitle.textContent = "카카오 지도를 불러오는 중입니다";
+  statusText.innerHTML = '지도가 계속 보이지 않으면 Kakao Developers의 <code>플랫폼 &gt; Web</code>에 <code>http://localhost:8080</code>을 등록했는지 확인하세요.';
+  const script = document.createElement("script");
+  script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&autoload=false&libraries=clusterer`;
+  script.async = true;
+  script.onload = () => {
+    if(!window.kakao?.maps?.load){
+      status.classList.add("show");
+      statusTitle.textContent = "카카오 지도 권한을 확인하세요";
+      statusText.innerHTML = 'JavaScript 키는 입력됐지만 SDK가 활성화되지 않았습니다. Kakao Developers에서 <code>카카오맵 사용 ON</code>과 <code>플랫폼 &gt; Web: http://localhost:8080</code> 등록을 확인하세요.';
+      return;
+    }
+    kakao.maps.load(initMap);
+  };
+  script.onerror = () => {
+    status.classList.add("show");
+    statusTitle.textContent = "카카오 지도 도메인 등록을 확인하세요";
+    statusText.innerHTML = '현재 JavaScript 키로 Kakao 지도 SDK를 불러오지 못했습니다. Kakao Developers의 <code>플랫폼 &gt; Web</code>에 <code>http://localhost:8080</code>을 등록한 뒤 <code>Ctrl + F5</code>로 새로고침하세요.';
+  };
+  document.head.appendChild(script);
+}
+
+function initMap(){
+  const status = document.getElementById("mapStatus");
+  status.classList.remove("show");
+  map = new kakao.maps.Map(document.getElementById("kakaoMap"), {
+    center: new kakao.maps.LatLng(36.3, 127.9),
+    level: 13
+  });
+  clusterer = new kakao.maps.MarkerClusterer({
+    map,
+    averageCenter: true,
+    minLevel: 5,
+    calculator: [10, 30, 60, 100],
+    styles: [
+      { width:"42px",height:"42px",background:"rgba(94,158,110,.88)",border:"2px solid #fff",borderRadius:"21px",color:"#fff",textAlign:"center",fontWeight:"800",lineHeight:"40px",boxShadow:"0 5px 14px rgba(0,0,0,.18)" },
+      { width:"50px",height:"50px",background:"rgba(198,179,106,.9)",border:"2px solid #fff",borderRadius:"25px",color:"#fff",textAlign:"center",fontWeight:"800",lineHeight:"48px",boxShadow:"0 5px 14px rgba(0,0,0,.18)" },
+      { width:"58px",height:"58px",background:"rgba(224,114,140,.9)",border:"2px solid #fff",borderRadius:"29px",color:"#fff",textAlign:"center",fontWeight:"800",lineHeight:"56px",boxShadow:"0 5px 14px rgba(0,0,0,.18)" },
+      { width:"66px",height:"66px",background:"rgba(194,78,108,.92)",border:"2px solid #fff",borderRadius:"33px",color:"#fff",textAlign:"center",fontWeight:"800",lineHeight:"64px",boxShadow:"0 5px 14px rgba(0,0,0,.18)" }
+    ]
+  });
+  state.mapReady = true;
+  kakao.maps.event.addListener(map, "idle", updateVisibleIdsFromBounds);
+  renderMarkers();
+  fitToCurrentSelection();
+}
+
+async function boot(){
+  try{
+    const response = await fetch("data.json", { cache: "no-store" });
+    if(!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    DATA = await response.json();
+    FAC = DATA.facilities;
+    REG = DATA.regions;
+    META = DATA.meta;
+    SHORT = Object.fromEntries(REG.map(r => [r.sido, r.short]));
+    loadSaved();
+    renderKpis();
+    renderTimeline();
+    renderDist();
+    renderFlag();
+    renderFallbackPreview();
+    renderAll();
+    loadKakaoMaps();
+  } catch(error) {
+    document.getElementById("list").innerHTML = `<div class="empty">data.json을 불러오지 못했습니다. 정적 서버에서 열어 주세요.</div>`;
+    console.error(error);
+  }
+}
+
+document.getElementById("q").addEventListener("input", (event) => {
+  state.q = event.target.value.trim();
+  state.selectedId = "";
+  renderAll();
+});
+document.getElementById("sg").addEventListener("change", (event) => {
+  state.sigungu = event.target.value;
+  state.selectedId = "";
+  renderAll();
+  fitToCurrentSelection();
+});
+document.getElementById("sort").addEventListener("change", (event) => {
+  state.sort = event.target.value;
+  renderList();
+});
+document.getElementById("savedOnly").addEventListener("click", () => {
+  state.savedOnly = !state.savedOnly;
+  state.selectedId = "";
+  renderAll();
+  fitToCurrentSelection();
+});
+document.getElementById("boundsOnly").addEventListener("change", (event) => {
+  state.boundsOnly = event.target.checked;
+  updateVisibleIdsFromBounds();
+  renderList();
+});
+document.getElementById("resetView").addEventListener("click", () => {
+  state.sido = "";
+  state.sigungu = "";
+  state.q = "";
+  state.quickFilter = "";
+  state.savedOnly = false;
+  state.selectedId = "";
+  document.getElementById("q").value = "";
+  if(overlay) overlay.setMap(null);
+  renderAll();
+  fitToCurrentSelection();
+});
+document.addEventListener("click", (event) => {
+  if(event.target.matches("[data-close-overlay]") && overlay) overlay.setMap(null);
+  const saveTarget = event.target.closest("[data-detail-save]");
+  if(saveTarget) toggleSaved(saveTarget.dataset.detailSave);
+  if(event.target.closest("[data-detail-clear]")){
+    state.selectedId = "";
+    if(overlay) overlay.setMap(null);
+    renderSelectionPanel();
+    renderList();
+  }
+});
+
+boot();
+</script>
+</body>
+</html>
+
+

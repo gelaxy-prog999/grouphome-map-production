@@ -1,0 +1,33 @@
+[
+  {
+    "id": "gh-066",
+    "name": "열린그룹홈",
+    "sido": "부산광역시",
+    "sigungu": "부산 강서구",
+    "address": "부산광역시 강서구 신호산단3로 55, 103-304",
+    "reason": "Kakao Local API returned no address result",
+    "triedQueries": [
+      "부산광역시 강서구 신호산단3로 55, 103-304",
+      "부산광역시 강서구 신호산단3로 55"
+    ],
+    "fallbackCenterQuery": "부산광역시 강서구",
+    "fallbackLat": 35.212,
+    "fallbackLng": 128.9805
+  },
+  {
+    "id": "gh-217",
+    "name": "맑은샘우리집",
+    "sido": "경기도",
+    "sigungu": "부천시",
+    "address": "경기도 부천시 성곡로 33번지 43, 1층",
+    "reason": "Kakao Local API returned no address result",
+    "triedQueries": [
+      "경기도 부천시 성곡로 33 43, 1층",
+      "경기도 부천시 성곡로 33 43,",
+      "경기도 부천시 성곡로 33 43"
+    ],
+    "fallbackCenterQuery": "경기도 부천시",
+    "fallbackLat": 37.5014422,
+    "fallbackLng": 126.7660139
+  }
+]

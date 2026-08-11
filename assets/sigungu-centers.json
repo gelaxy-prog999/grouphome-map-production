@@ -1,0 +1,890 @@
+{
+  "강원특별자치도 강릉시": {
+    "lat": 37.7525313,
+    "lng": 128.8759523,
+    "label": "강릉시, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 삼척시": {
+    "lat": 37.4498745,
+    "lng": 129.1652969,
+    "label": "삼척시, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 속초시": {
+    "lat": 38.2069574,
+    "lng": 128.5913424,
+    "label": "속초시, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 양구군": {
+    "lat": 38.1096812,
+    "lng": 127.9900596,
+    "label": "양구군, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 영월군": {
+    "lat": 37.1834983,
+    "lng": 128.4619814,
+    "label": "영월군, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 원주시": {
+    "lat": 37.3420996,
+    "lng": 127.9197603,
+    "label": "원주시, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 정선군": {
+    "lat": 37.380456,
+    "lng": 128.6609485,
+    "label": "정선군, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 태백시": {
+    "lat": 37.1637943,
+    "lng": 128.9857176,
+    "label": "태백시, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "강원특별자치도 횡성군": {
+    "lat": 37.4916,
+    "lng": 127.985,
+    "label": "횡성군, 강원특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 가평군": {
+    "lat": 37.8314,
+    "lng": 127.5098,
+    "label": "가평군, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 고양시": {
+    "lat": 37.6581862,
+    "lng": 126.8319452,
+    "label": "고양시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 과천시": {
+    "lat": 37.4289037,
+    "lng": 126.9881655,
+    "label": "과천시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 광명시": {
+    "lat": 37.4785475,
+    "lng": 126.8643937,
+    "label": "광명시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 광주시": {
+    "lat": 37.4290844,
+    "lng": 127.255189,
+    "label": "광주시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 구리시": {
+    "lat": 37.5935948,
+    "lng": 127.1297917,
+    "label": "구리시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 군포시": {
+    "lat": 37.3615229,
+    "lng": 126.9349025,
+    "label": "군포시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 김포시": {
+    "lat": 37.6155683,
+    "lng": 126.7157798,
+    "label": "김포시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 남양주시": {
+    "lat": 37.6359398,
+    "lng": 127.2165051,
+    "label": "남양주시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 동두천시": {
+    "lat": 37.9030856,
+    "lng": 127.0605175,
+    "label": "동두천시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 부천시": {
+    "lat": 37.5014422,
+    "lng": 126.7660139,
+    "label": "부천시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 성남시": {
+    "lat": 37.4201556,
+    "lng": 127.1262092,
+    "label": "성남시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 수원시": {
+    "lat": 37.2633325,
+    "lng": 127.0287472,
+    "label": "수원시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 시흥시": {
+    "lat": 37.3798891,
+    "lng": 126.8032255,
+    "label": "시흥시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 안산시": {
+    "lat": 37.3217152,
+    "lng": 126.8308604,
+    "label": "안산시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 안성시": {
+    "lat": 37.007773,
+    "lng": 127.279971,
+    "label": "안성시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 안양시": {
+    "lat": 37.3938528,
+    "lng": 126.9570605,
+    "label": "안양시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 양주시": {
+    "lat": 37.7849312,
+    "lng": 127.0457771,
+    "label": "양주시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 양평군": {
+    "lat": 37.4916,
+    "lng": 127.4875,
+    "label": "양평군, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 여주시": {
+    "lat": 37.2982901,
+    "lng": 127.637033,
+    "label": "여주시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 연천군": {
+    "lat": 38.0964,
+    "lng": 127.0746,
+    "label": "연천군, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 오산시": {
+    "lat": 37.1499376,
+    "lng": 127.0774625,
+    "label": "오산시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 용인시": {
+    "lat": 37.2405741,
+    "lng": 127.1785572,
+    "label": "용인시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 의왕시": {
+    "lat": 37.3449082,
+    "lng": 126.9689861,
+    "label": "의왕시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 의정부시": {
+    "lat": 37.7380747,
+    "lng": 127.0339665,
+    "label": "의정부시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 이천시": {
+    "lat": 37.2808823,
+    "lng": 127.4429132,
+    "label": "이천시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 처인구": {
+    "lat": 37.2345,
+    "lng": 127.2017,
+    "label": "처인구, 용인시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 파주시": {
+    "lat": 37.7598955,
+    "lng": 126.7801502,
+    "label": "파주시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 평택시": {
+    "lat": 36.9924966,
+    "lng": 127.1127168,
+    "label": "평택시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 포천시": {
+    "lat": 37.8948267,
+    "lng": 127.2007295,
+    "label": "포천시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 하남시": {
+    "lat": 37.5393019,
+    "lng": 127.2149406,
+    "label": "하남시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경기도 화성시": {
+    "lat": 37.1994653,
+    "lng": 126.8312632,
+    "label": "화성시, 경기도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 거제시": {
+    "lat": 34.8804677,
+    "lng": 128.621207,
+    "label": "거제시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 거창군": {
+    "lat": 35.6872871,
+    "lng": 127.9138505,
+    "label": "거창군, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 김해시": {
+    "lat": 35.2279109,
+    "lng": 128.8895378,
+    "label": "김해시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 사천시": {
+    "lat": 35.003468,
+    "lng": 128.064562,
+    "label": "사천시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 양산시": {
+    "lat": 35.3349979,
+    "lng": 129.0370582,
+    "label": "양산시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 진주시": {
+    "lat": 35.1803459,
+    "lng": 128.1079953,
+    "label": "진주시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 창원시": {
+    "lat": 35.227956,
+    "lng": 128.6818586,
+    "label": "창원시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 통영시": {
+    "lat": 34.854254,
+    "lng": 128.433205,
+    "label": "통영시, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 하동군": {
+    "lat": 35.0679208,
+    "lng": 127.7552641,
+    "label": "하동군, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상남도 함안군": {
+    "lat": 35.2726875,
+    "lng": 128.4065038,
+    "label": "함안군, 경상남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상북도 경산시": {
+    "lat": 35.825122,
+    "lng": 128.741329,
+    "label": "경산시, 경상북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상북도 구미시": {
+    "lat": 36.1195513,
+    "lng": 128.3444692,
+    "label": "구미시, 경상북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상북도 상주시": {
+    "lat": 36.4104478,
+    "lng": 128.1590614,
+    "label": "상주시, 경상북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상북도 청도군": {
+    "lat": 35.6473012,
+    "lng": 128.7348468,
+    "label": "청도군, 경상북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "경상북도 포항시": {
+    "lat": 36.0189315,
+    "lng": 129.3429384,
+    "label": "포항시, 경상북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "광주광역시 광산구": {
+    "lat": 35.1396428,
+    "lng": 126.7938232,
+    "label": "광산구, 광주, 전남광주통합특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "광주광역시 남구": {
+    "lat": 35.1327,
+    "lng": 126.9025,
+    "label": "남구, 광주, 전남광주통합특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "광주광역시 동구": {
+    "lat": 35.1462,
+    "lng": 126.9229,
+    "label": "동구, 광주, 전남광주통합특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "광주광역시 북구": {
+    "lat": 35.1741,
+    "lng": 126.9122,
+    "label": "북구, 광주, 전남광주통합특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "광주광역시 서구": {
+    "lat": 35.1521401,
+    "lng": 126.8900561,
+    "label": "서구, 광주, 전남광주통합특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대구광역시 남구": {
+    "lat": 35.845728,
+    "lng": 128.5977207,
+    "label": "남구, 대구광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대구광역시 달서구": {
+    "lat": 35.8297006,
+    "lng": 128.533094,
+    "label": "달서구, 대구광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대구광역시 북구": {
+    "lat": 35.8855,
+    "lng": 128.5828858,
+    "label": "북구, 대구광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대구광역시 수성구": {
+    "lat": 35.8584,
+    "lng": 128.6305,
+    "label": "수성구, 대구광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대구광역시 중구": {
+    "lat": 35.8692588,
+    "lng": 128.6059471,
+    "label": "중구, 대구광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대전광역시 대덕구": {
+    "lat": 36.3465766,
+    "lng": 127.4158483,
+    "label": "대덕구, 대전광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대전광역시 동구": {
+    "lat": 36.3120051,
+    "lng": 127.4554285,
+    "label": "동구, 대전광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대전광역시 서구": {
+    "lat": 36.3551786,
+    "lng": 127.3838487,
+    "label": "서구, 대전광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대전광역시 유성구": {
+    "lat": 36.3620732,
+    "lng": 127.3564099,
+    "label": "유성구, 대전광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "대전광역시 중구": {
+    "lat": 36.3254103,
+    "lng": 127.4211723,
+    "label": "중구, 대전광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 강서구": {
+    "lat": 35.212,
+    "lng": 128.9805,
+    "label": "강서구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 금정구": {
+    "lat": 35.2429,
+    "lng": 129.0926,
+    "label": "금정구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 기장군": {
+    "lat": 35.2447818,
+    "lng": 129.2215462,
+    "label": "기장군, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 남구": {
+    "lat": 35.1361,
+    "lng": 129.0843999,
+    "label": "남구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 동구": {
+    "lat": 35.129,
+    "lng": 129.0455,
+    "label": "동구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 동래구": {
+    "lat": 35.2052,
+    "lng": 129.0837,
+    "label": "동래구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 부산진구": {
+    "lat": 35.1632335,
+    "lng": 129.0529462,
+    "label": "부산진구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 북구": {
+    "lat": 35.1969,
+    "lng": 128.9901999,
+    "label": "북구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 사상구": {
+    "lat": 35.1521,
+    "lng": 128.9911,
+    "label": "사상구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 사하구": {
+    "lat": 35.1041,
+    "lng": 128.9751,
+    "label": "사하구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 수영구": {
+    "lat": 35.1454,
+    "lng": 129.1127,
+    "label": "수영구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 연제구": {
+    "lat": 35.1765,
+    "lng": 129.0793,
+    "label": "연제구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 중구": {
+    "lat": 35.106501,
+    "lng": 129.0325814,
+    "label": "중구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "부산광역시 해운대구": {
+    "lat": 35.1629,
+    "lng": 129.1638,
+    "label": "해운대구, 부산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 강동구": {
+    "lat": 37.53,
+    "lng": 127.1237,
+    "label": "강동구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 강북구": {
+    "lat": 37.6395,
+    "lng": 127.0255,
+    "label": "강북구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 강서구": {
+    "lat": 37.5509,
+    "lng": 126.8497,
+    "label": "강서구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 관악구": {
+    "lat": 37.4782,
+    "lng": 126.9518,
+    "label": "관악구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 광진구": {
+    "lat": 37.5362696,
+    "lng": 127.0879515,
+    "label": "광진구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 구로구": {
+    "lat": 37.4951999,
+    "lng": 126.8877,
+    "label": "구로구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 금천구": {
+    "lat": 37.4565,
+    "lng": 126.8954,
+    "label": "금천구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 노원구": {
+    "lat": 37.654,
+    "lng": 127.0567,
+    "label": "노원구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 동대문구": {
+    "lat": 37.5741982,
+    "lng": 127.0395092,
+    "label": "동대문구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 동작구": {
+    "lat": 37.5120999,
+    "lng": 126.9395,
+    "label": "동작구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 서대문구": {
+    "lat": 37.5790747,
+    "lng": 126.9367861,
+    "label": "서대문구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 서초구": {
+    "lat": 37.4835,
+    "lng": 127.0322,
+    "label": "서초구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 성북구": {
+    "lat": 37.59,
+    "lng": 127.0165,
+    "label": "성북구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 송파구": {
+    "lat": 37.5145,
+    "lng": 127.1058,
+    "label": "송파구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 양천구": {
+    "lat": 37.5171,
+    "lng": 126.8663,
+    "label": "양천구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 영등포구": {
+    "lat": 37.5262,
+    "lng": 126.8959,
+    "label": "영등포구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 은평구": {
+    "lat": 37.6024,
+    "lng": 126.9293,
+    "label": "은평구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "서울특별시 중랑구": {
+    "lat": 37.6063,
+    "lng": 127.093,
+    "label": "중랑구, 서울특별시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "울산광역시 남구": {
+    "lat": 35.5436,
+    "lng": 129.3304,
+    "label": "남구, 울산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "울산광역시 동구": {
+    "lat": 35.5046663,
+    "lng": 129.4170114,
+    "label": "동구, 울산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "울산광역시 북구": {
+    "lat": 35.5826,
+    "lng": 129.3604,
+    "label": "북구, 울산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "울산광역시 울주군": {
+    "lat": 35.5222362,
+    "lng": 129.2423693,
+    "label": "울주군, 울산광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 계양구": {
+    "lat": 37.5373539,
+    "lng": 126.7379078,
+    "label": "계양구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 남동구": {
+    "lat": 37.446902,
+    "lng": 126.7315126,
+    "label": "남동구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 미추홀구": {
+    "lat": 37.4636,
+    "lng": 126.6502,
+    "label": "미추홀구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 부평구": {
+    "lat": 37.5070221,
+    "lng": 126.7220068,
+    "label": "부평구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 서구": {
+    "lat": 37.545,
+    "lng": 126.676,
+    "label": "서해구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 연수구": {
+    "lat": 37.4098,
+    "lng": 126.6787,
+    "label": "연수구, 인천광역시, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "인천광역시 중구": {
+    "lat": 37.4735389,
+    "lng": 126.6214081,
+    "label": "중구, 제물포구, 인천광역시, 22315, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 고흥군": {
+    "lat": 34.6044123,
+    "lng": 127.276384,
+    "label": "고흥군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 곡성군": {
+    "lat": 35.2818969,
+    "lng": 127.2914673,
+    "label": "곡성군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 광양시": {
+    "lat": 34.9406452,
+    "lng": 127.6959512,
+    "label": "광양시, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 구례군": {
+    "lat": 35.2203329,
+    "lng": 127.473277,
+    "label": "구례군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 담양군": {
+    "lat": 35.320878,
+    "lng": 126.9883238,
+    "label": "담양군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 목포시": {
+    "lat": 34.7903335,
+    "lng": 126.3847547,
+    "label": "목포시, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 무안군": {
+    "lat": 34.9905794,
+    "lng": 126.4812377,
+    "label": "무안군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 보성군": {
+    "lat": 34.7711356,
+    "lng": 127.0798978,
+    "label": "보성군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 순천시": {
+    "lat": 34.9505457,
+    "lng": 127.4872992,
+    "label": "순천시, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 여수시": {
+    "lat": 34.7546257,
+    "lng": 127.659859,
+    "label": "여수시, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 영광군": {
+    "lat": 35.2769282,
+    "lng": 126.5124504,
+    "label": "영광군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 장흥군": {
+    "lat": 34.6811762,
+    "lng": 126.906996,
+    "label": "장흥군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전라남도 해남군": {
+    "lat": 34.55269,
+    "lng": 126.52431,
+    "label": "해남군, 전라남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 군산시": {
+    "lat": 35.9679984,
+    "lng": 126.7369036,
+    "label": "군산시, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 김제시": {
+    "lat": 35.803815,
+    "lng": 126.880557,
+    "label": "김제시, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 순창군": {
+    "lat": 35.3741,
+    "lng": 127.1374,
+    "label": "순창군, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 완주군": {
+    "lat": 35.9039,
+    "lng": 127.1622,
+    "label": "완주군, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 익산시": {
+    "lat": 35.9479291,
+    "lng": 126.9578025,
+    "label": "익산시, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 임실군": {
+    "lat": 35.6174,
+    "lng": 127.2893,
+    "label": "임실군, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 전주시": {
+    "lat": 35.8237631,
+    "lng": 127.1472805,
+    "label": "전주시, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "전북특별자치도 진안군": {
+    "lat": 35.7915,
+    "lng": 127.4252,
+    "label": "진안군, 전북특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "제주특별자치도 제주시": {
+    "lat": 33.4998289,
+    "lng": 126.5313902,
+    "label": "제주시, 제주특별자치도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 공주시": {
+    "lat": 36.47257,
+    "lng": 127.09124,
+    "label": "공주시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 당진시": {
+    "lat": 36.8904083,
+    "lng": 126.6461833,
+    "label": "당진시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 서북구": {
+    "lat": 36.8783935,
+    "lng": 127.1552727,
+    "label": "서북구, 천안시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 서산시": {
+    "lat": 36.784499,
+    "lng": 126.450317,
+    "label": "서산시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 아산시": {
+    "lat": 36.7899498,
+    "lng": 127.0026769,
+    "label": "아산시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 예산군": {
+    "lat": 36.6808989,
+    "lng": 126.8448742,
+    "label": "예산군, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 천안시": {
+    "lat": 36.8150283,
+    "lng": 127.1140654,
+    "label": "천안시, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청남도 태안군": {
+    "lat": 36.7454236,
+    "lng": 126.29836,
+    "label": "태안군, 충청남도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청북도 단양군": {
+    "lat": 36.9848,
+    "lng": 128.3659,
+    "label": "단양군, 충청북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청북도 제천시": {
+    "lat": 37.1326042,
+    "lng": 128.1913508,
+    "label": "제천시, 충청북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청북도 청주시": {
+    "lat": 36.6421169,
+    "lng": 127.4891742,
+    "label": "청주시, 충청북도, 대한민국",
+    "source": "nominatim-admin-center"
+  },
+  "충청북도 충주시": {
+    "lat": 36.9907334,
+    "lng": 127.9259891,
+    "label": "충주시, 충청북도, 대한민국",
+    "source": "nominatim-admin-center"
+  }
+}
