@@ -954,7 +954,7 @@ function loadKakaoMaps(){
   const status = document.getElementById("mapStatus");
   const statusTitle = status.querySelector("strong");
   const statusText = status.querySelector("span");
-  if(!key || key === "647726d9d5faad06d64afc00c2e9ead5"){
+  if(!key || key === "YOUR_KAKAO_JAVASCRIPT_KEY"){
     status.classList.add("show");
     statusTitle.textContent = "카카오 지도 키가 필요합니다";
     statusText.innerHTML = '배포 도메인에 등록한 JavaScript 키를 <code>GROUPHOME_MAP_CONFIG.kakaoJavaScriptKey</code>에 입력하세요.';
