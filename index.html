@@ -459,7 +459,7 @@ window.GROUPHOME_MAP_CONFIG = {
   //   1) 기존 애플리케이션 키 재발급(또는 신규 앱 생성)
   //   2) 플랫폼 > Web에 배포 도메인 + http://localhost:8080 등록
   //   3) set-kakao-js-key-windows.cmd 실행하여 새 키를 이 값에 반영
-  kakaoJavaScriptKey: "YOUR_KAKAO_JAVASCRIPT_KEY"
+  kakaoJavaScriptKey: "647726d9d5faad06d64afc00c2e9ead5"
 };
 </script>
 <script>
@@ -954,7 +954,7 @@ function loadKakaoMaps(){
   const status = document.getElementById("mapStatus");
   const statusTitle = status.querySelector("strong");
   const statusText = status.querySelector("span");
-  if(!key || key === "YOUR_KAKAO_JAVASCRIPT_KEY"){
+  if(!key || key === "647726d9d5faad06d64afc00c2e9ead5"){
     status.classList.add("show");
     statusTitle.textContent = "카카오 지도 키가 필요합니다";
     statusText.innerHTML = '배포 도메인에 등록한 JavaScript 키를 <code>GROUPHOME_MAP_CONFIG.kakaoJavaScriptKey</code>에 입력하세요.';
